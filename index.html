@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <html lang="en-us">
@@ -26,12 +26,8 @@
     <!-- moment js ref -->
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-    <!-- Firebase-->
-    <script src="https://www.gstatic.com/firebasejs/3.7.5/firebase.js"></script>
-
 
     <link rel="stylesheet" type="text/css" href="style.css">
-
 
 </head>
 
@@ -40,10 +36,9 @@
     <nav class="navbar navbar-default">
         <div class="container">
             <div class="jumbotron">
-                <h1 class="text-center">Current Train Schedule</h1>
-                <h2 class="text-center"> My Firebase Project</h2>
+                <h1 class="text-center"> Train Schedule</h1>
+                <h2 class="text-center"> Firebase Example</h2>
             </div>
-
 
             <br>
             <div class="row">
@@ -60,23 +55,19 @@
                                     <th>Train Name</th>
                                     <th>Destination</th>
                                     <th>Frequency(min)</th>
-                                    <th>Next Arrival</th>
-                                    <th>Minutes Away</th>
+                                    <!-- <th>Next Arrival</th>
+                                    <th>Minutes Away</th> -->
                                 </tr>
                             </thead>
 
                             <tbody></tbody>
                             <!--content goes here-->
-
                         </table>
                     </div><!-- table end-->
 
+                    <form id="contactform">
 
-
-
-                    <form>
-
-                        <div class="form-group">
+                        <!-- <div class="form-group">
 
 
                             <input type="text" class="form-control" id="name" placeholder="Train Name">
@@ -84,41 +75,51 @@
                             <input type="text" class="form-control" id="firstTime"
                                 placeholder="First Train Time HH:mm - military time">
                             <input type="text" class="form-control" id="freq" placeholder="Frequency (min)">
-                        </div>
-                    </form>
+                        </div> -->
+
+
                 </div>
             </div>
 
+            <input type="text" class="form-control" id="name" placeholder="">
 
+            <input type="text" class="form-control" id="train" placeholder="">
 
+            <input type="text" class="form-control" id="time" placeholder="">
 
-            <input type="text" class="form-control" id="name" placeholder="Train Name">
+            <!-- <input type="text" class="form-control" id="freq" placeholder="Frequency (min)"> -->
 
-
-            <input type="text" class="form-control" id="dest" placeholder="Destination">
-
-
-            <input type="text" class="form-control" id="firstTime" placeholder="First Train Time(24:00)">
-
-
-            <input type="text" class="form-control" id="freq" placeholder="Frequency (min)">
-
-            <button class="btn btn-primary btn-lg" id="trainInfoBtn" type="submit">Submit</button>
-
-
+            <button class="btn btn-primary btn-lg" id="trainInfoBtn" type="click">Submit</button>
 
             </form>
-
     </nav>
-    <form>
+    </div>
 
-        </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
 
-        </div>
+    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 
-        </div>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
 
-        <script type="script.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCXTNxU49hVDLTP_qhcWnxP6LD3lFFm80w",
+            authDomain: "train-scheduler-8f36f.firebaseapp.com",
+            databaseURL: "https://train-scheduler-8f36f.firebaseio.com",
+            projectId: "train-scheduler-8f36f",
+            storageBucket: "train-scheduler-8f36f.appspot.com",
+            messagingSenderId: "302904933037",
+            appId: "1:302904933037:web:4aed53d1696f83b8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+
+    <script src="main.js"></script>
 
 </body>
 
