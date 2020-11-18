@@ -1,10 +1,8 @@
 var config = {
-    apiKey: "AIzaSyDtR_Y1KmpfXmXf2FtSi_gD95yp5nomOTM",
-    authDomain: "train-app-hw.firebaseapp.com",
-    databaseURL: "https://train-app-hw.firebaseio.com",
-    projectId: "train-app-hw",
-    storageBucket: "train-app-hw.appspot.com",
-    messagingSenderId: "27551719601"
+
+
+    //firebase config here
+
 };
 
 firebase.initializeApp(config);

@@ -1,5 +1,7 @@
 body {
-    background-image: url(images/el.jpeg)
+    background-image: url(images/el.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #heading {
