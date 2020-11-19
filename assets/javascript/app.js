@@ -1,11 +1,13 @@
-var config = {
-
-
-    //firebase config here
-
+var firebaseConfig = {
+    apiKey: "AIzaSyAklHmh-Z8P7joqdkL699GjwrDYF39kJVs",
+    authDomain: "trains-2-744c7.firebaseapp.com",
+    databaseURL: "https://trains-2-744c7.firebaseio.com",
+    projectId: "trains-2-744c7",
+    storageBucket: "trains-2-744c7.appspot.com",
+    messagingSenderId: "115625158503",
+    appId: "1:115625158503:web:f6b32a9556817671"
 };
-
-firebase.initializeApp(config);
+firebase.initializeApp(firebaseConfig);
 
 var database = firebase.database();
 
