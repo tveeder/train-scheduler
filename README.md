@@ -6,10 +6,4 @@ train scheduler
 https://tveeder.github.io/train-scheduler/
 
 
-a form connected to firebase for train scheduling.
-
-user signs in and checks schedule.  
-
-
-use of bootstrap for the form
-
+<img src="/assets/css/images/el.jpeg" width="700" height="400">
